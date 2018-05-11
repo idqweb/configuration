@@ -1,4 +1,3 @@
-
 # Override these variables
 # to change the base directory
 # where edX is installed
@@ -234,6 +233,8 @@ COMMON_BRANCH_INSTALL: 'master'
 
 # ip the DataStore
 COMMON_IP_DATASTORE: '{{ IP_DATASTORE }}'
+
+COMMON_BRANCH_INSTALL_XQUEUE: 'open-release/ginkgo.master'
 
 COMMON_GITLAB_IP: '192.168.25.21'
 COMMON_GITLAB_PROTOCOL: 'http'
