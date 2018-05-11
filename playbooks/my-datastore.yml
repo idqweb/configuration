@@ -1,0 +1,51 @@
+---
+
+# Example sandbox configuration
+# for single server community
+# installs
+
+- name: Bootstrap instance(s)
+  hosts: all
+  gather_facts: no
+  become: True
+  roles:
+    - python
+
+- name: Configure instance(s)
+  hosts: all
+  become: True
+  gather_facts: True
+  vars:
+    migrate_db: "yes"
+    EDXAPP_LMS_NGINX_PORT: '80'
+    edx_platform_version: 'master'
+    # Set to false if deployed behind another proxy/load balancer.
+    NGINX_SET_X_FORWARDED_HEADERS: True
+    DISCOVERY_URL_ROOT: 'http://localhost:{{ DISCOVERY_NGINX_PORT }}'
+    ecommerce_create_demo_data: true
+    credentials_create_demo_data: true
+  vars_files:
+    - "./roles/ecommerce/defaults/main.yml"
+    - "./roles/insights/defaults/main.yml"
+    - "./roles/edxapp/defaults/main.yml"
+    - "./roles/edx_notes_api/defaults/main.yml"
+    - "./roles/analytics_pipeline/defaults/main.yml"
+    - "./roles/analytics_api/defaults/main.yml"
+    - "./roles/hive/defaults/main.yml"
+    - "./roles/credentials/defaults/main.yml"
+    - "./roles/discovery/defaults/main.yml"
+    - "./roles/forum/defaults/main.yml"
+    - "./roles/xqueue/defaults/main.yml"
+    - "./roles/ecommerce/defaults/main.yml"
+    - "./roles/ecomworker/defaults/main.yml"
+  roles:
+    # - role: swapfile
+    #   SWAPFILE_SIZE: 4GB
+    - role: edxlocal
+    - role: memcache
+    - role: mongo_3_2
+    - role: rabbitmq
+    - analytics_api
+    - oraclejdk
+    - role: elasticsearch
+    - edx_ansible
