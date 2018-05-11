@@ -230,7 +230,7 @@ CREATE_SERVICE_WORKER_USERS: True
 COMMON_ENABLE_AWS_ROLE: true
 
 # version branch to install
-COMMON_BRANCH_INSTALL: 'open-release/ginkgo.master'
+COMMON_BRANCH_INSTALL: 'master'
 
 # ip the DataStore
 COMMON_IP_DATASTORE: '{{ IP_DATASTORE }}'
