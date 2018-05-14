@@ -70,7 +70,9 @@ if [[ -f my-passwords.yml ]]; then
     EXTRA_VARS="-e@$(pwd)/my-passwords.yml $EXTRA_VARS"
 fi
 
-CONFIGURATION_VERSION=open-release/ginkgo.2
+GITLAB_IP:"192.168.25.21"
+GITLAB_USER:"isaacdi"
+CONFIGURATION_VERSION="uniovix"
 
 ##
 ## Clone the configuration repository and run Ansible
@@ -78,7 +80,7 @@ CONFIGURATION_VERSION=open-release/ginkgo.2
 cd /var/tmp
 
 # en el configuration estan todas las ramas desde el comienzo a HOY. Del proyecto original de Open edX.
-git clone http://isaacdi@192.168.25.21/isaacdi/configuration.git
+git clone http://$GITLAB_USER@$GITLAB_IP/$GITLAB_USER/configuration.git
 cd configuration
 git checkout $CONFIGURATION_VERSION
 git pull
@@ -92,4 +94,4 @@ sudo -H pip install -r requirements.txt
 ##
 ## Run the edx_sandbox.yml playbook in the configuration/playbooks directory
 ##
-cd /var/tmp/configuration/playbooks && sudo -E ansible-playbook -i localhost, -c local /var/tmp/configuration/playbooks/my-stateless.yml --extra-vars "IP_DATASTORE=192.168.25.49"
+cd /var/tmp/configuration/playbooks && sudo -E ansible-playbook -i localhost, -c local /var/tmp/configuration/playbooks/my-stateless.yml --extra-vars "IP_DATASTORE=192.168.25.30"

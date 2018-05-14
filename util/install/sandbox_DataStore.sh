@@ -70,15 +70,16 @@ if [[ -f my-passwords.yml ]]; then
     EXTRA_VARS="-e@$(pwd)/my-passwords.yml $EXTRA_VARS"
 fi
 
-CONFIGURATION_VERSION=open-release/ginkgo.2
+GITLAB_IP:"192.168.25.21"
+GITLAB_USER:"isaacdi"
+CONFIGURATION_VERSION="uniovix"
 
 ##
 ## Clone the configuration repository and run Ansible
 ##  Another way to do only single line:
 ##  git clone http://isaacdi@192.168.25.21/isaacdi/configuration-openedx.git -b $CONFIGURATION_VERSION --single-branch configuration-openedx
 ##
-cd /var/tmp
-git clone http://isaacdi@192.168.25.21/isaacdi/configuration.git
+git clone http://$GITLAB_USER@$GITLAB_IP/$GITLAB_USER/configuration.git
 cd configuration
 git checkout $CONFIGURATION_VERSION
 git pull
