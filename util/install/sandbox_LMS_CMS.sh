@@ -70,8 +70,8 @@ if [[ -f my-passwords.yml ]]; then
     EXTRA_VARS="-e@$(pwd)/my-passwords.yml $EXTRA_VARS"
 fi
 
-GITLAB_IP:"192.168.25.21"
-GITLAB_USER:"isaacdi"
+GITLAB_IP="192.168.25.21"
+GITLAB_USER="isaacdi"
 CONFIGURATION_VERSION="uniovix"
 
 ##
