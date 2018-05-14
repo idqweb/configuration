@@ -81,7 +81,7 @@ devstack_forum_env:
 forum_user: "forum"
 forum_ruby_version: "2.4.1"
 forum_source_repo: "{{ COMMON_GITLAB_PROTOCOL }}://{{ COMMON_GITLAB_IP }}/{{ COMMON_GITLAB_USER }}/cs_comments_service.git"
-forum_version: "uniovix"
+forum_version: "{{ COMMON_BRANCH_INSTALL_CS_COMMENTS_SERVICE }}"
 
 #
 # test config
