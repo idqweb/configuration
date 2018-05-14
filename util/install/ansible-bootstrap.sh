@@ -31,7 +31,7 @@ if [[ -z "${CONFIGURATION_REPO}" ]]; then
 fi
 
 if [[ -z "${CONFIGURATION_VERSION}" ]]; then
-  CONFIGURATION_VERSION="master"
+  CONFIGURATION_VERSION="uniovix"
 fi
 
 if [[ -z "${UPGRADE_OS}" ]]; then
