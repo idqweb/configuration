@@ -13,8 +13,8 @@
 
 set -xe
 
-GITLAB_IP:"192.168.25.21"
-GITLAB_USER:"isaacdi"
+GITLAB_IP="192.168.25.21"
+GITLAB_USER="isaacdi"
 
 
 
