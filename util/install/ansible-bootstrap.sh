@@ -23,7 +23,7 @@ if [[ -z "${ANSIBLE_REPO}" ]]; then
 fi
 
 if [[ -z "${ANSIBLE_VERSION}" ]]; then
-  ANSIBLE_VERSION="master"
+  ANSIBLE_VERSION="stable-1.9-plus-edx"
 fi
 
 if [[ -z "${CONFIGURATION_REPO}" ]]; then
@@ -31,7 +31,7 @@ if [[ -z "${CONFIGURATION_REPO}" ]]; then
 fi
 
 if [[ -z "${CONFIGURATION_VERSION}" ]]; then
-  CONFIGURATION_VERSION="master"
+  CONFIGURATION_VERSION="uniovix"
 fi
 
 if [[ -z "${UPGRADE_OS}" ]]; then
