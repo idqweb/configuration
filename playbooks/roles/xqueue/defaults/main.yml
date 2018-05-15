@@ -122,7 +122,7 @@ xqueue_auth_config:
   RABBITMQ_USER: "{{ XQUEUE_RABBITMQ_USER }}"
   RABBITMQ_PASS: "{{ XQUEUE_RABBITMQ_PASS }}"
 
-xqueue_source_repo: "{{ COMMON_GITLAB_PROTOCOL }}://{{ COMMON_GITLAB_IP }}/{{ COMMON_GITLAB_USER }}/xqueue.git"
+xqueue_source_repo: "{{ COMMON_GITLAB_PROTOCOL }}://{{ COMMON_GITLAB_IP }}/{{ COMMON_GITLAB_USER }}/gitxqueue.git"
 xqueue_version: '{{ COMMON_BRANCH_INSTALL_XQUEUE }}'
 xqueue_pre_requirements_file:       "{{ xqueue_code_dir }}/pre-requirements.txt"
 xqueue_post_requirements_file:      "{{ xqueue_code_dir }}/requirements.txt"
