@@ -209,7 +209,7 @@ EDXAPP_AUTH_DOCUMENTATION_URL: "http://course-catalog-api-guide.readthedocs.io/e
 # Settings for affiliate cookie tracking
 EDXAPP_AFFILIATE_COOKIE_NAME: 'dev_affiliate_id'
 
-EDXAPP_ENABLE_EDXNOTES: false
+EDXAPP_ENABLE_EDXNOTES: true
 
 EDXAPP_ENABLE_CREDIT_ELIGIBILITY: false
 EDXAPP_ENABLE_CREDIT_API: false
