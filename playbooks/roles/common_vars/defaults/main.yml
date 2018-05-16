@@ -254,4 +254,6 @@ COMMON_GITLAB_USER: 'isaacdi'
 COMMON_EDXAPP_LMS_SITE_NAME: 'localhost'
 COMMON_EDXAPP_CMS_SITE_NAME: 'localhost'
 
+COMMON_THEME_DIR: '/edx/app/edxapp/edx-platform/themes'
+
 COMMON_TIME_ZONE: 'Europe/Madrid'
