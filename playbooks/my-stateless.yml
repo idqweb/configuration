@@ -58,6 +58,10 @@
     # Discussion forums
     # https://github.com/edx/cs_comments_service
     - forum
+    
+    # Notes edx-notes-api
+    # https://github.com/edx/edx-notes-api
+    - edx_notes_api
 
     # Notifications service
     # https://github.com/edx/notifier
