@@ -248,6 +248,10 @@ COMMON_GITLAB_PROTOCOL: 'http'
 COMMON_GITLAB_USER: 'isaacdi'
 
 # variables de configuracion general
-COMMON_EDXAPP_LMS_SITE_NAME: 'UniOviX'
-COMMON_EDXAPP_CMS_SITE_NAME: ' Panel Admin UniOviX'
+
+# si el LMS y CMS estan en el mismo sitio esto en nuestro caso debería ser
+# uniovix.uniovi.es
+COMMON_EDXAPP_LMS_SITE_NAME: 'localhost'
+COMMON_EDXAPP_CMS_SITE_NAME: 'localhost'
+
 COMMON_TIME_ZONE: 'Europe/Madrid'
