@@ -232,7 +232,7 @@
 - name: Wait for web port to be available
   wait_for:
     port: "{{ supervisor_http_bind_port }}"
-    timeout: 5
+    timeout: 15
   when: start_supervisor.changed
   tags:
     - manage
