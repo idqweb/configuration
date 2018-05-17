@@ -746,7 +746,7 @@ EDXAPP_COMPREHENSIVE_THEME_DIRS:
 EDXAPP_COMPREHENSIVE_THEME_LOCALE_PATHS: []
 
 # Name of the default site theme
-EDXAPP_DEFAULT_SITE_THEME: "uniovix"
+EDXAPP_DEFAULT_SITE_THEME: ""
 EDXAPP_ENABLE_COMPREHENSIVE_THEMING: false
 
 # Git repo for the comprehensive theme (if using a comprehensive theme
