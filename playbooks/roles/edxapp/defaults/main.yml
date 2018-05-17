@@ -264,7 +264,7 @@ EDXAPP_ACE_CHANNEL_SAILTHRU_TEMPLATE_NAME: !!null
 EDXAPP_ACE_ROUTING_KEY: 'edx.lms.core.low'
 
 # Display a language selector in the LMS/CMS header.
-EDXAPP_SHOW_HEADER_LANGUAGE_SELECTOR: false
+EDXAPP_SHOW_HEADER_LANGUAGE_SELECTOR: true
 
 # Display a language selector in the LMS footer.
 EDXAPP_SHOW_FOOTER_LANGUAGE_SELECTOR: true
