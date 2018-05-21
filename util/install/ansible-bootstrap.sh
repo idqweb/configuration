@@ -13,13 +13,13 @@
 
 set -xe
 
-GITLAB_IP="192.168.25.21"
-GITLAB_USER="isaacdi"
+GITLAB_IP="github.com"
+GITLAB_USER="idqweb"
 
 
 
 if [[ -z "${ANSIBLE_REPO}" ]]; then
-  ANSIBLE_REPO="http://${GITLAB_IP}/${GITLAB_USER}/ansible.git"
+  ANSIBLE_REPO="https://${GITLAB_IP}/${GITLAB_USER}/ansible.git"
 fi
 
 if [[ -z "${ANSIBLE_VERSION}" ]]; then
@@ -27,11 +27,11 @@ if [[ -z "${ANSIBLE_VERSION}" ]]; then
 fi
 
 if [[ -z "${CONFIGURATION_REPO}" ]]; then
-  CONFIGURATION_REPO="http://${GITLAB_IP}/${GITLAB_USER}/configuration.git"
+  CONFIGURATION_REPO="https://${GITLAB_IP}/${GITLAB_USER}/configuration.git"
 fi
 
 if [[ -z "${CONFIGURATION_VERSION}" ]]; then
-  CONFIGURATION_VERSION="uniovix"
+  CONFIGURATION_VERSION="idqweb"
 fi
 
 if [[ -z "${UPGRADE_OS}" ]]; then
