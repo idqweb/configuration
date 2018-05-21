@@ -70,9 +70,9 @@ if [[ -f my-passwords.yml ]]; then
     EXTRA_VARS="-e@$(pwd)/my-passwords.yml $EXTRA_VARS"
 fi
 
-GITLAB_IP="192.168.25.21"
-GITLAB_USER="isaacdi"
-CONFIGURATION_VERSION="uniovix"
+GITLAB_IP="github.com"
+GITLAB_USER="idqweb"
+CONFIGURATION_VERSION="idqweb"
 
 ##
 ## Clone the configuration repository and run Ansible
@@ -80,7 +80,7 @@ CONFIGURATION_VERSION="uniovix"
 cd /var/tmp
 
 # en el configuration estan todas las ramas desde el comienzo a HOY. Del proyecto original de Open edX.
-git clone http://$GITLAB_USER@$GITLAB_IP/$GITLAB_USER/configuration.git
+git clone https://$GITLAB_USER@$GITLAB_IP/$GITLAB_USER/configuration.git
 cd configuration
 git checkout $CONFIGURATION_VERSION
 git pull
